@@ -31,6 +31,10 @@
     ],
     "SubWeapon": [
         {
+            "name": "アルカナ",
+            "value": 3
+        },
+        {
             "name": "ウポ補助Lv20",
             "value": 16
         },
