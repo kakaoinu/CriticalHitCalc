@@ -188,5 +188,19 @@
             "name": "+2クロード2体",
             "value": 28
         }
+    ],
+    "Special": [
+        {
+            "name": "MB",
+            "value": 3
+        },
+        {
+            "name": "潜在Lv33",
+            "value": 2
+        },
+        {
+            "name": "潜在Lv70",
+            "value": 5
+        }
     ]
 }
