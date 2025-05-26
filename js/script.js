@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     span.dataset.value = item.value;
 
                     span.addEventListener('click', () => {
-                        if (section === 'Ring') {
+                        if (section === 'Ring' || section === 'Special') {
                             span.classList.toggle('selected');
                         } else {
                             if (span.classList.contains('selected')) {
