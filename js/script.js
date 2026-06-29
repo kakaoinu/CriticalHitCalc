@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 sectionDiv.appendChild(title);
 
                 // ▼ 修正箇所：「補助武器」「SubWeapon」は除外した上で、武器や鎧にベース入力欄を出す 
-                const isBaseTarget = (section.includes('Weapon') || section.includes('Armor') || section.includes('武器') || section.includes('鎧')) 
+                const isBaseTarget = (section.includes('武器') || section.includes('鎧')) 
                      && !section.includes('SubWeapon') && !section.includes('補助武器');
                 
                 if (isBaseTarget) {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         span.dataset.value = item.value;
 
                         span.addEventListener('click', () => {
-                            if (section === 'Ring' || section === 'Special') {
+                            if (section === '指' || section === 'その他' || section.includes('製錬')) {
                                 span.classList.toggle('selected');
                             } else {
                                 if (span.classList.contains('selected')) {
